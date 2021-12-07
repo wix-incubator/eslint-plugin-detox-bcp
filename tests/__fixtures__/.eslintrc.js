@@ -1,10 +1,10 @@
 module.exports = {
     root: true,
-    plugins: ['detox'],
+    plugins: ['detox-bcp'],
     overrides: [
         {
             files: ['no-unhandled-catch/*'],
-            rules: { 'detox/no-unhandled-catch': 'error' },
+            rules: { 'detox-bcp/no-unhandled-catch': 'error' },
         },
         {
             files: ['*.es6.js'],

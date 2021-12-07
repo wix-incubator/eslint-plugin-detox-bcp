@@ -17,16 +17,21 @@
   "main": "lib/index.js",
   "scripts": {
     "commit": "cz",
-    "prepare": "cd tests && npm i",
+    "prepare": "husky install",
     "lint": "eslint .",
     "test": "jest"
   },
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.0.1",
     "eslint-plugin-editorconfig": "^3.2.0",
     "eslint-plugin-eslint-plugin": "^4.0.1",
     "eslint-plugin-node": "^11.1.0",
+    "glob": "^7.2.0",
+    "husky": "^7.0.4",
     "jest": "^27.4.3",
     "string.prototype.replaceall": "^1.0.6"
   },

@@ -19,11 +19,6 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["tests/__fixtures/**/*.js"],
-      extends: [],
-      plugins: ["detox"],
-    },
-    {
       files: ["tests/**/*"],
       env: { jest: true }
     },
