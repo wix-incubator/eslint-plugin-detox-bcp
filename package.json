@@ -1,20 +1,28 @@
 {
-  "name": "eslint-plugin-detox",
+  "name": "eslint-plugin-detox-bcp",
   "version": "0.0.0",
-  "description": "Contains ESLint rules that may enforce best Detox practices",
+  "description": "Contains ESLint rules that may enforce best current practices for Detox",
   "keywords": [
+    "detox",
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
   "author": "Yaroslav Serhieiev <yaroslavs@wix.com>",
+  "homepage": "https://github.com/wix-incubator/eslint-plugin-detox-bcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wix-incubator/eslint-plugin-detox-bcp.git"
+  },
   "main": "lib/index.js",
   "scripts": {
+    "commit": "cz",
     "prepare": "cd tests && npm i",
     "lint": "eslint .",
     "test": "jest"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.0.1",
     "eslint-plugin-editorconfig": "^3.2.0",
     "eslint-plugin-eslint-plugin": "^4.0.1",
@@ -28,5 +36,10 @@
   "peerDependencies": {
     "eslint": ">=6"
   },
-  "license": "ISC"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

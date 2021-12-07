@@ -1,6 +1,6 @@
 # eslint-plugin-detox
 
-Contains ESLint rules that may enforce best Detox practices.
+Contains ESLint rules that may enforce current best practices for Detox.
 
 ## Installation
 
