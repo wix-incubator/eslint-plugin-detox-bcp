@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no-unhandled-catch: invalid-multiple-try-catch 1`] = `
+"line 7, col 10, Error - 'err' error is caught but never handled. Allowed unhandled exceptions must match regexp: /^ignore/u. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: invalid-multiple-try-catch-2 1`] = `
+"line 4, col 10, Error - 'error' error is caught but never handled. Allowed unhandled exceptions must match regexp: /^ignore/u. (detox/no-unhandled-catch)
+: line 7, col 10, Error - 'err' error is caught but never handled. Allowed unhandled exceptions must match regexp: /^ignore/u. (detox/no-unhandled-catch)
+
+2 problems"
+`;
+
+exports[`no-unhandled-catch: invalid-nested-shadowing 1`] = `
+"line 2, col 10, Error - 'err' error is caught but never handled. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: invalid-non-ignored 1`] = `
+"line 4, col 10, Error - 'err' error is caught but never handled. Allowed unhandled exceptions must match regexp: /^ignore/u. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: invalid-optional-catch.es2019 1`] = `
+"line 3, col 3, Error - Optional catch binding is disallowed, please handle the caught error. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: invalid-simple 1`] = `
+"line 2, col 10, Error - 'err' error is caught but never handled. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: invalid-unary-operator 1`] = `
+"line 3, col 5, Error - 'err' error is caught but never handled. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: invalid-write-assigment 1`] = `
+"line 3, col 5, Error - 'err' error is caught but never handled. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: invalid-write-assignment-2 1`] = `
+"line 3, col 5, Error - 'err' error is caught but never handled. (detox/no-unhandled-catch)
+
+1 problem"
+`;
+
+exports[`no-unhandled-catch: valid-ignored-empty 1`] = `""`;
+
+exports[`no-unhandled-catch: valid-in-class.es6 1`] = `""`;
+
+exports[`no-unhandled-catch: valid-in-scope 1`] = `""`;
+
+exports[`no-unhandled-catch: valid-iteration 1`] = `""`;
+
+exports[`no-unhandled-catch: valid-nested 1`] = `""`;
+
+exports[`no-unhandled-catch: valid-simple 1`] = `""`;
