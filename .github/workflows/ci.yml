@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ '*' ]
+
+  workflow_dispatch:
+
+jobs:
+
+  main:
+    name: Default
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: NPM install
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test -- --coverage
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Semantic release
+        if: github.ref == 'refs/heads/main'
+        run: npx --no-install semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

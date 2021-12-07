@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-detox-bcp",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Contains ESLint rules that may enforce best current practices for Detox",
   "keywords": [
     "detox",
@@ -19,7 +19,8 @@
     "commit": "cz",
     "prepare": "husky install",
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "lib"
@@ -33,7 +34,8 @@
     "glob": "^7.2.0",
     "husky": "^7.0.4",
     "jest": "^27.4.3",
-    "string.prototype.replaceall": "^1.0.6"
+    "string.prototype.replaceall": "^1.0.6",
+    "semantic-release": "^18.0.1"
   },
   "engines": {
     "node": "12.x || 14.x || >= 16"
