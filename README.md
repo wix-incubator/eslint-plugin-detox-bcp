@@ -52,7 +52,7 @@ or just use:
 
 ## Supported Rules
 
-### detox/no-unhandled-errors
+### detox-bcp/no-unhandled-errors
 
 Prevents situations where the test writer always treats a caught error as a failed expectation or element action:
 
