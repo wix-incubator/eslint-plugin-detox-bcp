@@ -1,4 +1,4 @@
-# eslint-plugin-detox
+# eslint-plugin-detox-bcp
 
 Contains ESLint rules that may enforce current best practices for Detox.
 
@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-detox`:
+Next, install `eslint-plugin-detox-bcp`:
 
 ```sh
-npm install eslint-plugin-detox --save-dev
+npm install eslint-plugin-detox-bcp --save-dev
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ Add `detox` to the plugins section of your `.eslintrc` configuration file. You c
 ```json
 {
     "plugins": [
-        "detox"
+        "detox-bcp"
     ]
 }
 ```
@@ -34,8 +34,19 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "detox/no-unhandled-errors": 2
+        "detox-bcp/no-unhandled-errors": "error"
     }
+}
+```
+
+or just use:
+
+
+```json
+{
+    "extends": [
+        "plugin:detox-bcp/all"
+    ]
 }
 ```
 
