@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "detox-bcp/no-unhandled-errors": "error"
+        "detox-bcp/no-unhandled-catch": "error"
     }
 }
 ```
@@ -52,7 +52,7 @@ or just use:
 
 ## Supported Rules
 
-### detox-bcp/no-unhandled-errors
+### detox-bcp/no-unhandled-catch
 
 Prevents situations where the test writer always treats a caught error as a failed expectation or element action:
 
